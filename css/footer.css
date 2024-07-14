@@ -6,13 +6,7 @@
 白色 #FFFFFF
 ---*/
 
-.footer_wrapper {
-  max-width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.footer_content {
+.footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -24,14 +18,23 @@
   color: white;
 }
 
-@media (max-width: 768px) {
-  .footer_content {
-    flex-direction: column;
-  }
+.footer_wrapper {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@media (max-width: 360px) {
+.contact_follow {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+@media (max-width: 768px) {
   .footer_wrapper {
     max-width: 100%;
+  }
+  .footer {
+    flex-direction: column;
   }
 }

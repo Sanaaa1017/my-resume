@@ -6,13 +6,7 @@
 白色 #FFFFFF
 ---*/
 
-.header_wrapper {
-  max-width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.header_content {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,6 +17,12 @@
   color: white;
 }
 
+.header_wrapper {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .header_nav {
   display: flex;
   justify-content: space-between;
@@ -30,17 +30,12 @@
   min-width: 330px;
 }
 
-@media (max-width:768px) {
-  .header_nav{
+@media (max-width: 768px) {
+  .header_wrapper {
+    max-width: 100%;
+  }
+  .header_nav {
     display: none;
   }
 }
-
-@media (max-width:360px) {
-  .header_wrapper{
-    max-width: 100%;
-  }
-  
-}
-
 

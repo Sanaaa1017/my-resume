@@ -13,13 +13,22 @@
 body {
   height: 100%;
   margin: 0;
-  background-image: url(../images/index-Inn.svg);
+  background-image: url(../images/projects-Waihou.svg);
 }
 
 a {
   text-decoration: none;
   color: #ffffff;
   letter-spacing: 1px;
+}
+
+h1{
+  text-align: center;
+  text-wrap: nowrap;
+}
+
+.nav_change {
+  border-bottom: 2px solid #ffffff;
 }
 
 .main{
@@ -31,60 +40,6 @@ a {
   max-width: 80%;
   margin-left: auto;
   margin-right: auto;
-}
-
-/* about me */
-.about_me {
-  display: flex;
-  align-items: center;
-  margin-bottom: 50px;
-}
-
-.profile_img {
-  background-color: #9a9a9a;
-  min-width: 300px;
-  height: 300px;
-}
-
-.about_content {
-  padding: 20px;
-}
-
-.about_title {
-  margin: 0;
-  font-size: 2rem;
-}
-
-.about_text {
-  margin: 20px 0;
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-.action_links {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.action_btn {
-  background-color: #161616;
-  border: 3px solid #161616;
-  color: #ffffff;
-  padding: 5px 10px;
-  margin: 8px;
-  cursor: pointer;
-}
-
-.hover_red:hover {
-  background-color: #f45b0f;
-}
-
-.hover_yellow:hover {
-  background-color: #ffd726;
-}
-
-.hover_blue:hover {
-  background-color: #048ecb;
 }
 
 /* my projects */
@@ -112,17 +67,14 @@ a {
   line-height: 1.5;
 }
 
-.project_btn{
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  gap: 4px;
-  color: #161616;
-  font-size: 1rem;
-  font-weight: bold;
-}
 
 @media (max-width: 768px) {
+  h1{
+    font-size: 1.8rem;
+  }
+  .main{
+    padding: 20px 10px;
+  }
   .main_wrapper {
     max-width: 90%;
   }
@@ -153,6 +105,10 @@ a {
 }
 
 @media (max-width: 360px) {
+  h1{
+    margin: 10px;
+    font-size: 1.5rem;
+  }
   .main_wrapper {
     max-width: 100%;
   }
