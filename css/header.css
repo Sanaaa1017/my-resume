@@ -1,0 +1,46 @@
+/*---顏色
+紅色 #F45B0F
+黃色 #FFD726
+藍色 #048ECB
+黑色 #161616
+白色 #FFFFFF
+---*/
+
+.header_wrapper {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #000000;
+  color: white;
+}
+
+.header_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 330px;
+}
+
+@media (max-width:768px) {
+  .header_nav{
+    display: none;
+  }
+}
+
+@media (max-width:360px) {
+  .header_wrapper{
+    max-width: 100%;
+  }
+  
+}
+
+

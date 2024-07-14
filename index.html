@@ -4,20 +4,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MY PERSONAL WEBSITE</title>
+    <title>YUHAN'S WEBSITE</title>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
-    <nav>
-        <!-- 左: 我的名字 -->
-        <!-- 右: resume、projects、contact、home(icon) -->
-    </nav>
+    <header>
+        <!-- L: logo -->
+        <!-- R: nav links -->
+        <div class="header_content  header_wrapper">
+            <h1 class="logo">🟡<i>YU-HAN</i></h1>
+            <nav class="header_nav">
+                <a href="./pages/resume.html" class="nav_link">RESUME</a>
+                <a href="./pages/projects.html" class="nav_link">PROJECTS</a>
+                <a href="./pages/contact.html" class="nav_link">CONTACT</a>
+                <!-- <a href="">
+                    <img src="./images/house-chimney-solid.svg" width="30px" alt="">
+                </a> -->
+            </nav>
+        </div>
+    </header>
     <main>
-        <!-- 左: 個人照 -->
-        <!-- 右: 關於我、(resume、projects、contact) -->
+        <!-- L: profile image -->
+        <!-- R: about me, button links -->
+        <section>
+            <div class="about_content wrapper">
+                <div class="profile_img"></div>
+                <div class="about_me">
+                    <h2 class="about_title">Hello everyone!</h2>
+                    <div class="about_text"> I'm HSU, YU-HAN, a positive and enthusiastic beginner developer. I am
+                        currrently focusing on UI/UX design to create user-friendly and beautiful websites. Welcome to
+                        my personal website, please feel free to browse my work and reach out to me.</div>
+                    <div class="action_links">
+                        <button href="./pages/resume.html" class="action_btn hover_red">RESUME</button>
+                        <button href="./pages/projects.html" class="action_btn hover_yellow">PROJECTS</button>
+                        <button href="./pages/contact.html" class="action_btn hover_blue">CONTACT</button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
-        <!-- 左到右: Phone、Email、Follow Me、 -->
+        <!-- logo, phone, email, follow me -->
+        <div class="footer_content footer_wrapper">
+            <!-- <div class="logo">🟡<i>YU-HAN</i></div> -->
+            <div class="contact_phone">
+                <span>Phone | </span>
+                <span>0912-345-678</span>
+            </div>
+            <div class="contact_email">
+                <span>Email | </span>
+                <span>abcde123456@gmail.com</span>
+            </div>
+            <div class="contact_follow">
+                <span>Follow | </span>
+                <div class="li_icon"></div>
+                <div class="fb_icon"></div>
+            </div>
+        </div>
     </footer>
 </body>
 

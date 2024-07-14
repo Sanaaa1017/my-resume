@@ -1,0 +1,37 @@
+/*---顏色
+紅色 #F45B0F
+黃色 #FFD726
+藍色 #048ECB
+黑色 #161616
+白色 #FFFFFF
+---*/
+
+.footer_wrapper {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer_content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  height: fit-content;
+  background-color: #000000;
+  padding: 30px;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .footer_content {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 360px) {
+  .footer_wrapper {
+    max-width: 100%;
+  }
+}
