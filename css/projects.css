@@ -22,7 +22,7 @@ a {
   letter-spacing: 1px;
 }
 
-h1{
+h1 {
   text-align: center;
   text-wrap: nowrap;
 }
@@ -31,7 +31,7 @@ h1{
   border-bottom: 2px solid #ffffff;
 }
 
-.main{
+.main {
   background-color: #ffffffe8;
   padding: 50px 30px;
 }
@@ -43,7 +43,7 @@ h1{
 }
 
 /* my projects */
-.my_project{
+.my_project {
   display: flex;
   margin: 30px 0;
 }
@@ -58,21 +58,41 @@ h1{
 .project_content {
   padding: 10px 20px;
 }
+.project_link {
+  display: flex;
+  justify-content: space-between;
+  align-items: self-end;
+}
 
-.project_title{
+.project_title {
   margin: 0 30px;
 }
 
-.project_text{
+.project_btn {
+  justify-content: end;
+  background-color: #161616;
+  border: 2px solid #161616;
+  width: fit-content;
+  height: fit-content;
+  padding: 5px 10px;
+  color: #090909;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.project_btn:hover {
+  transform: scale(1.2);
+}
+
+.project_text {
   line-height: 1.5;
 }
 
-
 @media (max-width: 768px) {
-  h1{
+  h1 {
     font-size: 1.8rem;
   }
-  .main{
+  .main {
     padding: 20px 10px;
   }
   .main_wrapper {
@@ -84,7 +104,7 @@ h1{
   }
   .profile_img {
     order: 2;
-    min-width: 100% ;
+    min-width: 100%;
     margin: auto;
   }
   .about_content {
@@ -93,19 +113,25 @@ h1{
   .action_links {
     justify-content: center;
   }
-  .my_project{
+  .my_project {
     flex-wrap: wrap;
   }
   .project_img {
     margin: auto;
   }
-  .project_title{
-   text-align: center;
+  .project_title {
+    text-align: center;
   }
+  .project_link{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+   }
 }
 
 @media (max-width: 360px) {
-  h1{
+  h1 {
     margin: 10px;
     font-size: 1.5rem;
   }
@@ -115,7 +141,7 @@ h1{
   .profile_img {
     width: 100%;
   }
-  .contact{
+  .contact {
     text-align: center;
   }
 }

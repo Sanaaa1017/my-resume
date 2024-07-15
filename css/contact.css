@@ -1,0 +1,44 @@
+/*---顏色
+紅色 #F45B0F
+黃色 #FFD726
+藍色 #048ECB
+黑色 #161616
+白色 #FFFFFF
+---*/
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100%;
+    margin: 0;
+    background-image: url(../images/contact-Reuss.svg);
+  }
+  
+  a {
+    text-decoration: none;
+    color: #ffffff;
+    letter-spacing: 1px;
+  }
+  
+  h1 {
+    text-align: center;
+    text-wrap: nowrap;
+  }
+  
+  .nav_change {
+    border-bottom: 2px solid #ffffff;
+  }
+  
+  .main {
+    background-color: #ffffffe8;
+    padding: 50px 30px;
+  }
+  
+  .main_wrapper {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  

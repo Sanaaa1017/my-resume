@@ -23,11 +23,23 @@
   margin-right: auto;
 }
 
+.logo:hover{
+  transform: scale(1.1);
+}
+
 .header_nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   min-width: 330px;
+}
+
+.nav_link:hover{
+  border-bottom: 2px solid #ffffff;
+}
+
+.home_icon:hover{
+  transform: scale(1.2);
 }
 
 @media (max-width: 768px) {
