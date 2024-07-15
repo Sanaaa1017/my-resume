@@ -45,7 +45,8 @@ h1 {
 /* my projects */
 .my_project {
   display: flex;
-  margin: 30px 0;
+  justify-content: center;
+  margin: 30px auto;
 }
 
 .project_img {
