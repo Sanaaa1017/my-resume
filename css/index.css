@@ -24,7 +24,7 @@ a {
 
 .main {
   background-color: #ffffffe8;
-  padding: 50px 30px;
+  padding: 60px 30px;
 
 }
 
@@ -42,7 +42,8 @@ a {
 }
 
 .profile_img {
-  background-color: #9a9a9a;
+  background-image: url(../images/profile_img.jpg);
+  background-size: contain;
   min-width: 300px;
   height: 300px;
 }
@@ -96,15 +97,14 @@ a {
 
 .my_project {
   display: flex;
+  align-items: center;
   flex: 1 1 100%;
   margin: 30px 0;
 }
 
-.project_img {
+.project_img img{
   flex: 0 1 auto;
-  background-color: #9a9a9a;
-  min-width: 200px;
-  height: 200px;
+  width: 300px;
 }
 
 .project_content {
@@ -113,8 +113,17 @@ a {
 
 .project_link{
   display: flex;
+  /* flex-wrap: wrap; */
   justify-content: space-between;
-  align-items:self-end;
+  align-items:center;
+}
+
+@media (max-width:1040px) {
+  .project_link{
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:center;
+  }
 }
 
 .project_title {
@@ -128,6 +137,7 @@ a {
   width: fit-content;
   height: fit-content;
   padding: 5px 10px;
+  margin: 5px 0;
   color: #090909;
   font-size: 1rem;
   font-weight: bold;
@@ -141,6 +151,21 @@ a {
   line-height: 1.5;
 }
 
+.project_text li{
+  margin-top: 8px;
+}
+
+.seemore_btn{
+  float: right;
+  color: #161616;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.seemore_btn:hover{
+  transform: scale(1.2) rotate(-5deg);
+}
+
 @media (max-width: 768px) {
   .main_wrapper {
     max-width: 90%;
@@ -149,9 +174,9 @@ a {
     flex-wrap: wrap;
     padding: 0;
   }
-  .profile_img {
+  .profile_img{
     order: 2;
-    min-width: 100%;
+    background-repeat: no-repeat;
     margin: auto;
   }
   .about_content {
