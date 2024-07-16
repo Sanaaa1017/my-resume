@@ -24,7 +24,7 @@
   
   h1 {
     text-align: center;
-    text-wrap: nowrap;
+    text-wrap: wrap;
   }
   
   .nav_change {

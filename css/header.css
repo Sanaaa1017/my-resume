@@ -7,8 +7,9 @@
 ---*/
 
 .header {
+  position: relative;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   height: 70px;
   padding-left: 30px;
@@ -23,30 +24,132 @@
   margin-right: auto;
 }
 
-.logo:hover{
+.logo:hover {
   transform: scale(1.1);
 }
 
 .header_nav {
   display: flex;
   justify-content: space-between;
+  margin-left: auto;
   align-items: center;
   min-width: 330px;
 }
 
-.nav_link:hover{
+.nav_link:hover {
   border-bottom: 2px solid #ffffff;
 }
 
-.home_icon:hover{
+.home_icon:hover {
   transform: scale(1.2);
 }
 
 @media (max-width: 768px) {
+  .header {
+    justify-content: space-between;
+  }
+
   .header_wrapper {
     max-width: 100%;
   }
+
   .header_nav {
+    display: none;
+  }
+}
+
+/* mobile_btn */
+#toggler {
+  display: none;
+}
+
+
+
+.mobile_header_nav {
+  display: none;
+  transform: scaleY(0);
+  transition: transform 0.3s ease-in-out;
+  transform-origin: 50% 0;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  background-color: #161616e0;
+  width: 100%;
+  height: fit-content;
+}
+
+.mobile_header_nav ul {
+  padding: 0;
+  margin: auto;
+  list-style: none;
+}
+
+.mobile_header_nav li {
+  text-align: center;
+  line-height: 1.5;
+  margin: 24px 0;
+}
+
+/* Ham button styling */
+.box {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  display: none;
+}
+
+.box .line {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255, 255, 255);
+  width: 70%;
+  height: 5px;
+}
+
+.box .line_1 {
+  top: 25%;
+}
+
+.box .line_2 {
+  top: 50%;
+}
+
+.box .line_3 {
+  top: 75%;
+}
+
+#toggler:checked + label .box .line_1 {
+  transform: translate(-50%, -50%) rotate(45deg);
+  top: 50%;
+  transition: 1s;
+}
+
+#toggler:checked + label .box .line_2 {
+  display: none;
+}
+
+#toggler:checked + label .box .line_3 {
+  transform: translate(-50%, -50%) rotate(-45deg);
+  top: 50%;
+  transition: 1s;
+}
+
+@media (max-width: 768px) {
+  .box {
+    display: block;
+  }
+  .mobile_header_nav {
+    display: block;
+  }
+  #toggler:checked ~ .mobile_header_nav {
+    transform: scaleY(1);
+    display: block;
+  }
+}
+
+@media (min-width:768px) {
+  .mobile_header_nav {
     display: none;
   }
 }
