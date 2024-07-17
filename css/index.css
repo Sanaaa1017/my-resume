@@ -108,6 +108,7 @@ a {
 
 .project_content {
   padding: 10px 20px;
+  flex-grow: 1;
 }
 
 .project_link {
@@ -196,6 +197,7 @@ a {
     align-items: center;
     gap: 8px;
   }
+  
 }
 
 @media (max-width: 400px) {
